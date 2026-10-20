@@ -1,0 +1,15 @@
+# secrets & local
+creds.txt
+.env
+.env.*
+!.env.example
+*.local
+*.log
+node_modules/
+dist/
+coverage/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+

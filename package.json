@@ -1,0 +1,23 @@
+{
+  "name": "authsec",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AuthSec — a hyper-modern MERN authentication & authorization platform (API + React SPA). Single-command dev.",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "setup": "node scripts/dev.mjs --setup-only",
+    "seed": "npm --prefix server run seed",
+    "build": "npm --prefix client run build",
+    "start": "npm --prefix server start",
+    "lint": "npm --prefix server run lint && npm --prefix client run lint",
+    "test": "npm --prefix server run test && npm --prefix client run test",
+    "docker:build": "docker compose build",
+    "docker:up": "docker compose up -d",
+    "docker:down": "docker compose down"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}
